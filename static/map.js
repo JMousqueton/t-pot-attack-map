@@ -424,8 +424,8 @@ function connectWebSocket() {
   webSock.onopen = function () {
     // Log connection success and display "T-Pot Honeypot Stats" title in green, so we know connection is established
     var honeypotStatsHeader = document.getElementById("honeypotStatsHeader");
-    honeypotStatsHeader.style.color = "green";
-    honeypotStatsHeader.textContent = "T-Pot Honeypot Stats"
+    // honeypotStatsHeader.style.color = "green";
+    honeypotStatsHeader.textContent = "🟢 Cyberattacks Map"
     console.log('[*] WebSocket connection established.');
   };
 
