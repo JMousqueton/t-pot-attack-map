@@ -268,7 +268,7 @@ def push(alerts):
                     "{:<{width}}".format(str(value), width=min_widths[i]) for i, value in enumerate(row))
                 print(formatted_line)
         # Replace the last two digits of the IP with 'XX'
-        anonymized_ip = re.sub(r'(\d+)\.(\d+)$', r'\1.**', ip)
+        anonymized_ip = re.sub(r'(\d+)\.(\d+)$', r'\1.**', alert["src_ip"])
 
         json_data = {
             "protocol": alert["protocol"],
