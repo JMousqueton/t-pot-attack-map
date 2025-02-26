@@ -375,7 +375,6 @@ function handleLegend(msg) {
     msg.src_ip,
     msg.iso_code,
     msg.country,
-    msg.honeypot,
     msg.protocol
   ];
   redrawCountIP('#ip-tracking', 'ip-tracking', ipCountList, msg.ip_to_code);
