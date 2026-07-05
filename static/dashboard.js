@@ -1335,8 +1335,8 @@ Cache Statistics:
                 datasets: [{
                     label: datasetLabel,
                     data: data,
-                    borderColor: '#e20074',
-                    backgroundColor: 'rgba(226, 0, 116, 0.1)',
+                    borderColor: '#5fba47',
+                    backgroundColor: 'rgba(95, 186, 71, 0.1)',
                     fill: true,
                     tension: 0.4
                 }]
@@ -1483,7 +1483,7 @@ Cache Statistics:
         const textColor = this.theme === 'dark' ? '#b0b0b0' : '#495057';
         const gridColor = this.theme === 'dark' ? '#333' : '#dee2e6';
         // Use same transparency as timeline chart
-        const backgroundColor = 'rgba(226, 0, 116, 0.1)'; // Match timeline exactly
+        const backgroundColor = 'rgba(95, 186, 71, 0.1)'; // Match timeline exactly
 
         this.charts.honeypot = new Chart(ctx, {
             type: 'radar',
@@ -1492,10 +1492,10 @@ Cache Statistics:
                 datasets: [{
                     label: 'Attacks (Last 15m)',
                     data: [0],
-                    borderColor: '#e20074',
+                    borderColor: '#5fba47',
                     backgroundColor: backgroundColor, // Match timeline transparency
-                    pointBackgroundColor: '#e20074',
-                    pointBorderColor: '#e20074',
+                    pointBackgroundColor: '#5fba47',
+                    pointBorderColor: '#5fba47',
                     pointRadius: 4,
                     borderWidth: 2
                 }]
@@ -1544,8 +1544,8 @@ Cache Statistics:
                                 labels.forEach(label => {
                                     if (label.fillStyle) {
                                         // Use the same transparency as timeline chart
-                                        label.fillStyle = 'rgba(226, 0, 116, 0.1)';
-                                        label.strokeStyle = '#e20074';
+                                        label.fillStyle = 'rgba(95, 186, 71, 0.1)';
+                                        label.strokeStyle = '#5fba47';
                                         label.lineWidth = 1; // Match timeline chart default stroke width
                                     }
                                 });
@@ -1741,7 +1741,7 @@ Cache Statistics:
                 // Update honeypot chart dataset colors to match timeline chart exactly
                 if (chart === this.charts.honeypot && chart.data.datasets[0]) {
                     // Use same transparency as timeline chart (0.1) regardless of theme
-                    const backgroundColor = 'rgba(226, 0, 116, 0.1)';
+                    const backgroundColor = 'rgba(95, 186, 71, 0.1)';
                     chart.data.datasets[0].backgroundColor = backgroundColor;
                 }
                 
