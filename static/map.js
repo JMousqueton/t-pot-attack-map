@@ -719,9 +719,9 @@ function addMarker(dst_country_name, dst_iso_code, dst_ip, tpot_hostname, dstLat
         var marker = L.marker(dstLatLng, {
             icon: L.icon({
                 iconUrl: 'static/images/honeypot-marker.svg',
-                iconSize: [48, 48], // Match original square size
-                iconAnchor: [24, 40], // Adjusted anchor to fix hovering (was 48)
-                popupAnchor: [0, -48], // Match original popup position
+                iconSize: [24, 24], // Halved from 48
+                iconAnchor: [12, 20], // Halved from 24,40
+                popupAnchor: [0, -24], // Halved from -48
                 className: 'honeypot-marker'
             }),
         });
