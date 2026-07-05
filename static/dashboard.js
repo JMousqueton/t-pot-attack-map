@@ -3145,8 +3145,7 @@ Cache Statistics:
         row.appendChild(protocolCell);
 
         addCell('port-cell', event.port || event.dst_port || 'N/A');
-        addCell('tpot-hostname-cell', event.tpot_hostname || 'Unknown');
-        
+
         // Add to top of table
         tbody.insertBefore(row, tbody.firstChild);
         

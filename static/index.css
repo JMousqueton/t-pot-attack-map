@@ -1139,16 +1139,6 @@ body {
     color: var(--text-secondary);
 }
 
-/* T-Pot Hostname column */
-#live-attacks-table .tpot-hostname-cell {
-    font-weight: 500;
-    max-width: 120px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: var(--text-primary);
-}
-
 /* Protocol column */
 #live-attacks-table .protocol-cell {
     text-align: left;
