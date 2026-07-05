@@ -1032,7 +1032,7 @@ function createHoneypotPopup(honeypotData) {
     titleDiv.className = 'popup-title';
     
     const h4 = document.createElement('h4');
-    h4.textContent = 'T-Pot Honeypot';
+    h4.textContent = 'Cohesity Honeypot';
     
     const subtitle = document.createElement('span');
     subtitle.className = 'popup-subtitle';
