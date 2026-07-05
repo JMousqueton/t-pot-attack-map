@@ -2653,3 +2653,8 @@ html[data-theme="light"] .leaflet-container {
 #sound-options {
     display: none;
 }
+
+/* Hide the Ukrainian flag SVG that Leaflet 1.8+ adds to the attribution prefix */
+.leaflet-attribution-flag {
+    display: none !important;
+}
