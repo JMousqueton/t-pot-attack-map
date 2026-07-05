@@ -1123,12 +1123,6 @@ body {
     white-space: nowrap;
 }
 
-/* Honeypot column */
-#live-attacks-table .honeypot-cell {
-    font-weight: 500;
-    color: var(--text-primary);
-}
-
 /* IP Reputation column */
 #live-attacks-table .ip-rep-cell {
     font-weight: 500;

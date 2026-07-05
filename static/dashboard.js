@@ -3134,7 +3134,6 @@ Cache Statistics:
         row.appendChild(flagCell);
 
         addCell('country-cell', event.country || 'Unknown');
-        addCell('honeypot-cell', event.honeypot || 'Unknown');
 
         const protocolCell = document.createElement('td');
         protocolCell.className = 'protocol-cell';
